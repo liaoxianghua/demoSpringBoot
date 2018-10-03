@@ -1,6 +1,5 @@
 package com.example.demoSpringBoot.adapter;
 
-import com.alibaba.fastjson.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Configuration;
@@ -23,9 +22,9 @@ public class MvcConfigAdapter implements WebMvcConfigurer {
             @Override
             public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
                 Enumeration en = request.getParameterNames();
-                while (en.hasMoreElements()){
+                while (en.hasMoreElements()) {
                     String key = (String) en.nextElement();
-                    LOG.info("key = {},value = {}", key,request.getParameter(key));
+                    LOG.info("key = {},value = {}", key, request.getParameter(key));
                 }
                 return true;
             }
