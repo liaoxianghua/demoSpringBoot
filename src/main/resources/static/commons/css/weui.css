@@ -1249,6 +1249,16 @@ i.weui-tabbar__icon,
   width:100%;
   background-color:#FAFAFA;
 }
+.weui-navbar .weui-navbar-fixed{
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:flex;
+  position:fixed;
+  z-index:500;
+  top:0;
+  width:100%;
+  background-color:#FAFAFA;
+}
 .weui-navbar:after{
   content:" ";
   position:absolute;
