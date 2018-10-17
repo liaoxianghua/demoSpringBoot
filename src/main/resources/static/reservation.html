@@ -25,13 +25,13 @@
                     <div class="weui-cell">
                         <div class="weui-cell__hd"><label class="weui-label">预约人</label></div>
                         <div class="weui-cell__bd">
-                            <input class="weui-input" type="text" maxlength="10" required="required" minlength="2" placeholder="姓名">
+                            <input class="weui-input" name="name" type="text" maxlength="10" required="required" minlength="2" placeholder="姓名">
                         </div>
                     </div>
                     <div class="weui-cell">
                         <div class="weui-cell__hd"><label class="weui-label">所在单位</label></div>
                         <div class="weui-cell__bd">
-                            <input class="weui-input" type="text" maxlength="30" placeholder="单位名称">
+                            <input class="weui-input" data-id="companyName" type="text" maxlength="30" placeholder="单位名称">
                         </div>
                     </div>
                     <div class="weui-cell">
@@ -67,7 +67,7 @@
                             <input class="weui-input" type="text" size="100" placeholder="可不填(最多输入100字)">
                         </div>
                     </div>
-                    <a href="javascript:void(0);" class="weui-btn weui-btn_primary">立即预约</a>
+                    <a href="javascript:void(0);" class="weui-btn weui-btn_primary" id="btn-ljyy">立即预约</a>
                 </div>
                 <div>
                     <p class="weui-cell__lxwm">联系我们 <a href="tel:0571-87389185" style="color: #999999;">0571-87389185</a></p>
@@ -83,7 +83,8 @@
 <script type="text/javascript" src="commons/js/third/jquery-weui.js"></script>
 <script type="text/javascript" src="./js/footer.js"></script>
 <script type="text/javascript">
-    $("a.weui-btn .weui-btn_primary").click(function () {
+    $("#btn-ljyy").click(function () {
+        $("")
         console.log(2222)
     })
 </script>
